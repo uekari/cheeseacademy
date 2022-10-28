@@ -1,0 +1,657 @@
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+	width: 1300px;
+}
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーー title ーー*/
+.title {
+	background: url(../img/mainbg.png);
+	width: 100%;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title div h1 {
+	font-size: 48px;
+	color: white;
+	text-align: center;
+}
+
+.title div p {
+	font-size: 36px;
+	color: white;
+	text-align: center;
+}
+
+/*-- header --*/
+.header {
+	width: 100%;
+	height: 110px;
+	/*----- ↑見本は80px -----*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0.5px solid #efefef;
+}
+
+.logo {
+	width: 40%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.list {
+	width: 60%;
+	font-size: 21px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+/*-- ABOUT --*/
+.ABOUT {
+	text-align: center;
+}
+
+.ABOUT h2 {
+	font-size: 24px;
+	color: #ffd61a;
+	margin-top: 120px;
+}
+
+.ABOUT h3 {
+	font-size: 18px;
+	color: black;
+	margin-top: 24px;
+	margin-bottom: 64px;
+}
+
+.ABOUT_sub {
+	font-size: 16px;
+	color: black;
+	margin-bottom: 40px;
+}
+
+.ABOUT_sub2 {
+	font-size: 16px;
+	color: black;
+	margin-bottom: 80px;
+}
+
+
+
+.slide {
+	width: 100%;
+	height: 250px;
+	/* 画像の高さ */
+	background-image: url(/img/about-image.jpg);
+	background-repeat: repeat-x;
+	background-size: auto 250px;
+	/* 画像の高さ */
+	animation: loop 20s linear infinite;
+}
+
+@keyframes loop {
+	from {
+		background-position: 0 0;
+	}
+
+	to {
+		background-position: -2000px 0;
+		/* 画像のマイナス幅 */
+	}
+}
+
+
+
+/*--COURSE--*/
+.COURSE_sub {
+	text-align: center;
+}
+
+.COURSE_sub h2 {
+	font-size: 24px;
+	color: black;
+	margin-top: 64px;
+}
+
+.COURSE_sub p {
+	font-size: 16px;
+	color: black;
+	margin-top: 32px;
+	margin-bottom: 64px;
+}
+
+.COURSE_img1 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(240, 235, 235);
+}
+
+.COURSE_img1 img {
+	width: 650px;
+}
+
+.img1_text {
+	width: 50%;
+	align-content: center;
+	margin-right: 140px;
+	margin-left: 48px;
+}
+
+.img1_text h1 {
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+.img1_text p {
+	font-size: 16px;
+	color: #222222;
+}
+
+.COURSE_img2 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(240, 235, 235);
+}
+
+.img2_text {
+	width: 50%;
+	align-content: center;
+	margin-right: 48px;
+	margin-left: 140px;
+}
+
+.img2_text h1 {
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+.img2_text p {
+	font-size: 16px;
+	color: #222222;
+}
+
+.COURSE_img2 img {
+	width: 650px;
+}
+
+
+.COURSE_img3 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(240, 235, 235);
+}
+
+.COURSE_img3 img {
+	width: 650px;
+}
+
+
+.img3_text {
+	width: 50%;
+	align-content: center;
+	margin-right: 140px;
+	margin-left: 48px;
+}
+
+.img3_text h1 {
+	font-size: 24px;
+	color: #222222;
+	margin-bottom: 40px;
+}
+
+.img3_text p {
+	font-size: 16px;
+	color: #222222;
+}
+
+
+
+/*-- NEWS --*/
+.NEWS_title h2 {
+	font-size: 24px;
+	color: #ffd61a;
+	text-align: center;
+	margin-top: 64px;
+}
+
+.NEWS_title p {
+	color: black;
+	text-align: center;
+	margin-bottom: 64px;
+}
+
+.img5 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img5_1 {
+	width: 300px;
+	margin: 32px 16px 16px 32px;
+}
+
+.img5_2 {
+	width: 300px;
+	margin: 32px 16px 16px 32px;
+}
+
+.img5_3 {
+	width: 300px;
+	margin: 32px 16px 16px 32px;
+}
+
+.img5 h1 {
+	font-size: 16px;
+	color: black;
+	margin: 32px 0px 24px;
+}
+
+.img5 p {
+	font-size: 15px;
+	color: black;
+}
+
+
+
+/*-- MORE --*/
+.MORE {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 56px 0px 48px;
+	padding: 1em 2em;
+	width: 300px;
+	height: 60px;
+	color: white;
+	font-size: 21px;
+	background-color: rgb(255, 196, 0);
+}
+
+
+
+/*-- ACCESS --*/
+.ACCESS {
+	background-color: #fafafa;
+	width: 100%;
+	text-align: center;
+}
+
+.ACCESS_title {
+	padding: 64px 0px 64px;
+}
+
+.ACCESS_title h2 {
+	font-size: 24px;
+	margin-bottom: 24px;
+}
+
+.ACCESS_title p {
+	font-size: 16px;
+}
+
+.map {
+	width: 100%;
+	position: relative;
+	padding: 0px 0px 64px;
+}
+
+.map iframe {
+	top: 0;
+	left: 0;
+	width: 1300px;
+	height: 400px;
+}
+
+.ACCESS_end {
+	padding: 0px 350px 56px;
+}
+
+.ACCESS_end ul {
+	text-align: left;
+}
+
+ul {
+	margin-bottom: 24px;
+}
+
+
+/*-- CONTACT --*/
+.CONTACT {
+	text-align: center;
+}
+
+.CONTACT_text h1 {
+	padding: 64px 0px 24px;
+}
+
+.CONTACT_text h2 {
+	margin-bottom: 64px;
+}
+
+.CONTACT_text2 {
+	margin-top: 32px;
+	margin-bottom: 80px;
+}
+
+
+.CONTACT_form {
+	width: 600px;
+	margin: 0px 350px 40px;
+}
+
+.form_1 {
+	width: 0 auto;
+}
+
+input {
+	width: 328px;
+	height: 36px;
+	font-size: 18px;
+	border: 1px solid #bfbfbf;
+	text-align: left;
+}
+
+textarea {
+	width: 328px;
+	height: 108px;
+	font-size: 18px;
+	border: 1px solid #bfbfbf;
+}
+
+.name {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.name p {
+	margin-right: 120px;
+}
+
+.name2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.name2 p {
+	margin-right: 120px;
+}
+
+.mail {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.mail p {
+	margin-right: 120px;
+}
+
+
+.douki {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 32px;
+}
+
+.abcde {
+	width: 250px;
+}
+
+.abcde p {
+	margin-right: 120px;
+	margin-left: 20px;
+}
+
+.checkbox {
+	width: 350px;
+}
+
+.syousai {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.syousai p {
+	margin-right: 120px;
+}
+
+.checkbox input {
+	width: 24px;
+	height: 24px;
+	font-size: 14px;
+	border: 1px solid #bfbfbf;
+	text-align: left;
+	display: none;
+}
+
+.checkbox input[type="checkbox"]+label {
+	display: none;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	padding-left: 25px;
+}
+
+/* ラベルの左に表示させる正方形のボックス□ */
+.checkbox input[type="checkbox"]+label::before {
+	content: "";
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	width: 24px;
+	height: 24px;
+	margin-top: -10px;
+	left: 0;
+	top: 50%;
+	border: none;
+	background-color: #f0ebe5;
+}
+
+/* チェックが入った時のレ点 */
+.checkbox input[type="checkbox"]:checked+label::after {
+	content: "";
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	width: 18px;
+	height: 9px;
+	margin-top: -9px;
+	top: 50%;
+	left: 3px;
+	transform: rotate(-45deg);
+	border-bottom: 3px solid;
+	border-left: 3px solid;
+	border-color: deeppink;
+}
+
+input[type=checkbox]+label {
+	transform: scale(24px);
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+.box {
+	width: 500px;
+	font-size: 14px;
+}
+
+
+.btn {
+	font-size: 18px;
+	margin-top: 40px;
+	margin-bottom: 130px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn input {
+	width: 298px;
+	height: 54px;
+	color: white;
+	text-align: center;
+	background-color: #ffd61a;
+	border: none;
+}
+
+
+.balloonoya {
+	position: relative;
+	/* 指定した分だけ相対的に移動 */
+}
+
+.balloonoya:hover .balloon {
+	display: inline;
+	/* インライン要素として表示 */
+}
+
+.balloon {
+	position: absolute;
+	/* 親要素を基準 */
+	display: none;
+	/* 要素を非表示 */
+	padding: 2px;
+	/* テキストの前後の余白 */
+	background-color: rgba(246, 71, 167, 0.5);
+	/* 背景色（透明度） */
+	width: 250px;
+	/* 吹き出し全体の幅 */
+	bottom: 15%;
+	left: 25%;
+	/* 表示位置 */
+	font-size: 90%;
+	/* 文字サイズ */
+	animation: sample2Anime 1s linear;
+}
+
+.balloon:after {
+	border-left: 12px solid rgba(246, 71, 167, 0.5);
+	/* 吹き出し口の幅・色 */
+	border-top: 10px solid transparent;
+	/* 吹き出し口の高さ１／２ */
+	border-bottom: 10px solid transparent;
+	/* 吹き出し口の高さ１／２ */
+	right: -11px;
+	/* 吹き出し口の位置調整 */
+	top: 5%;
+	/* 吹き出し口の縦位置 */
+	content: "";
+	/* コンテンツの挿入 */
+	position: absolute;
+	/* 親要素を基準 */
+}
+
+@keyframes sample2Anime {
+	100% {
+		color: black;
+		background: rgba(255, 127, 127, 0.75)
+	}
+
+	50% {
+		color: black;
+		background: rgba(255, 127, 127, 0.25)
+	}
+
+	0% {
+		color: white;
+		background: white
+	}
+}
+
+
+.tomjerry {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.tomjerry img {
+	width: 80px;
+	margin-left: 20px;
+	animation: rotate-anime 3s linear infinite;
+}
+
+@keyframes rotate-anime {
+	0% {
+		transform: rotate(0);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+/* last部分 */
+.last {
+	text-align: center;
+	color: white;
+	padding: 32px 0px 32px;
+	background-color: #707070;
+}
+
+.last h1 {
+	margin: 0px;
+	font-size: 18px;
+}
+
+
+/* footer・トップに戻る */
+#page-top {
+	position: fixed;
+	right: 170px;
+	bottom: 90px;
+	font-size: 13px;
+	line-height: 1rem;
+	background: rgba(255, 174, 0, 0.462);
+	color: black;
+	padding: 28px;
+	border: solid 0px;
+	border-radius: 50%;
+	box-shadow: 0 2px 10px -6px rgba(0, 0, 0, .5), 0 3px 10px -4px rgba(0, 0, 0, .2);
+}
+
+html {
+	scroll-behavior: smooth;
+}
